@@ -9,7 +9,7 @@ const CartContainer = ({ isActive, handleIsActiveState }) => {
 
       <div className="flex gap-2 justify-around p-2">
         <button
-          onClick={() => handleIsActiveState("cart")}
+          onClick={() => handleIsActiveState(true)}
           className={` bg-gray-900 w-full py-3 font-semibold text-lg rounded ${
             cart && "border"
           }`}
@@ -18,7 +18,7 @@ const CartContainer = ({ isActive, handleIsActiveState }) => {
         </button>
 
         <button
-          onClick={() => handleIsActiveState("about")}
+          onClick={() => handleIsActiveState(false)}
           className={` bg-gray-900 w-full py-3 font-semibold text-lg rounded ${
             !cart && "border"
           }`}

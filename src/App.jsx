@@ -11,7 +11,7 @@ function App() {
   });
 
   const handleIsActiveState = (status) => {
-    if (status == "cart") {
+    if (status ) {
       setIsActive({
         cart: true,
         status: "cart",
